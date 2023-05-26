@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+  }
+  
+  .emojis {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  
+  .emoji {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+      "icon"
+      "title"
+      "description"
+      "link";
+  }
+  
+  .icon {
+    grid-area: icon;
+    font-size: 4rem;
+  }
+  
+  .emoji h2 {
+    grid-area: title;
+    text-align: left;
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .emoji p {
+    grid-area: description;
+    text-align: left;
+  }
+  
+  .emoji a {
+    grid-area: link;
+    text-align: left;
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
